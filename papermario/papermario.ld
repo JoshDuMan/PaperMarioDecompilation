@@ -109,7 +109,7 @@ SECTIONS
 
    /* 0x80035D30 011130-0111F0 [C0] */
    .text80035D30 0x80035D30 : AT(0x011130) {
-      build/asm/code_11130_len_c0.o(.text80035D30);
+      build/src/code_11130_len_c0.o(.text);
    }
 
    /* 0x80035DF0 0111F0-011A50 [860] */
