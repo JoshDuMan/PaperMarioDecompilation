@@ -1,18 +1,12 @@
 #include "common.h"
 
-INCLUDE_ASM(os/code_3a850_le_a40, nuPiInit);
+u8 INCLUDE_ASM(os/code_3a850_le_a40, nuContInit, void);
 
-INCLUDE_ASM(os/code_3a850_le_a40, nuPiReadRom);
+void INCLUDE_ASM(os/code_3a850_le_a40, nuContDataGet, OSContPad* contdata, u32 padno);
 
-INCLUDE_ASM(os/code_3a850_le_a40, nuGfxInit);
+void INCLUDE_ASM(os/code_3a850_le_a40, nuContPakMgrInit, void);
 
-INCLUDE_ASM(os/code_3a850_le_a40, nuContInit);
-
-INCLUDE_ASM(os/code_3a850_le_a40, nuContDataGet);
-
-INCLUDE_ASM(os/code_3a850_le_a40, nuContPakMgrInit);
-
-INCLUDE_ASM(os/code_3a850_le_a40, nuContPakMgrRemove);
+void INCLUDE_ASM(os/code_3a850_le_a40, nuContPakMgrRemove, void);
 
 INCLUDE_ASM(os/code_3a850_le_a40, contPakOpen);
 
@@ -35,9 +29,9 @@ s32 INCLUDE_ASM(os/code_3a850_le_a40, osMotorStop, OSPfs *unk);
 
 INCLUDE_ASM(os/code_3a850_le_a40, contRmbControl);
 
-INCLUDE_ASM(os/code_3a850_le_a40, nuContRmbMgrInit);
+void INCLUDE_ASM(os/code_3a850_le_a40, nuContRmbMgrInit, void);
 
-INCLUDE_ASM(os/code_3a850_le_a40, nuContRmbMgrRemove);
+void INCLUDE_ASM(os/code_3a850_le_a40, nuContRmbMgrRemove, void);
 
 INCLUDE_ASM(os/code_3a850_le_a40, contRmbCheckMesg);
 

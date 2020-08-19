@@ -1,6 +1,6 @@
 #include "common.h"
 
-INCLUDE_ASM(os/code_3b290_len_100, nuContRmbStart);
+void INCLUDE_ASM(os/code_3b290_len_100, nuContRmbStart, u32 contNo, u16 freq, u16 frame);
 
-INCLUDE_ASM(os/code_3b290_len_100, nuContRmbCheck);
+s32 INCLUDE_ASM(os/code_3b290_len_100, nuContRmbCheck, u32 contNo);
 

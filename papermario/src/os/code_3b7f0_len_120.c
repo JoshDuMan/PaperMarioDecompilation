@@ -1,6 +1,6 @@
 #include "common.h"
 
-INCLUDE_ASM(os/code_3b7f0_len_120, nuSiCallBackAdd);
+void INCLUDE_ASM(os/code_3b7f0_len_120, nuSiCallBackAdd, NUCallBackList* list, NUCallBackFunc func);
 
-INCLUDE_ASM(os/code_3b7f0_len_120, nuSiCallBackRemove);
+void INCLUDE_ASM(os/code_3b7f0_len_120, nuSiCallBackRemove, NUCallBackList* list);
 

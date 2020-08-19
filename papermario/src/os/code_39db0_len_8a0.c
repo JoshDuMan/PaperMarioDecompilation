@@ -1,20 +1,20 @@
 #include "common.h"
 
-INCLUDE_ASM(os/code_39db0_len_8a0, nuScCreateScheduler);
+void INCLUDE_ASM(os/code_39db0_len_8a0, nuScCreateScheduler, u8 videoMode, u8 numFields);
 
 INCLUDE_ASM(os/code_39db0_len_8a0, nuScExecuteAudio);
 
 INCLUDE_ASM(os/code_39db0_len_8a0, nuScExecuteGraphics);
 
-INCLUDE_ASM(os/code_39db0_len_8a0, nuScAddClient);
+void INCLUDE_ASM(os/code_39db0_len_8a0, nuScAddClient, NUScClient *c, OSMesgQueue *mq, NUScMsg msgType);
 
-INCLUDE_ASM(os/code_39db0_len_8a0, nuScRemoveClient);
+void INCLUDE_ASM(os/code_39db0_len_8a0, nuScRemoveClient, NUScClient *client);
 
 INCLUDE_ASM(os/code_39db0_len_8a0, nuScResetClientMesgType);
 
-INCLUDE_ASM(os/code_39db0_len_8a0, nuScGetGfxMQ);
+OSMesgQueue* INCLUDE_ASM(os/code_39db0_len_8a0, nuScGetGfxMQ, void);
 
-INCLUDE_ASM(os/code_39db0_len_8a0, nuScGetAudioMQ);
+OSMesgQueue* INCLUDE_ASM(os/code_39db0_len_8a0, nuScGetAudioMQ, void);
 
 INCLUDE_ASM(os/code_39db0_len_8a0, nuScSetFrameBufferNum);
 

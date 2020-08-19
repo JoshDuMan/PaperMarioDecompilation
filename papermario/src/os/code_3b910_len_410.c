@@ -1,12 +1,12 @@
 #include "common.h"
 
-INCLUDE_ASM(os/code_3b910_len_410, nuContMgrInit);
+u8 INCLUDE_ASM(os/code_3b910_len_410, nuContMgrInit, void);
 
-INCLUDE_ASM(os/code_3b910_len_410, nuContMgrRemove);
+void INCLUDE_ASM(os/code_3b910_len_410, nuContMgrRemove, void);
 
-INCLUDE_ASM(os/code_3b910_len_410, nuContDataClose);
+void INCLUDE_ASM(os/code_3b910_len_410, nuContDataClose, void);
 
-INCLUDE_ASM(os/code_3b910_len_410, nuContDataOpen);
+void INCLUDE_ASM(os/code_3b910_len_410, nuContDataOpen, void);
 
 INCLUDE_ASM(os/code_3b910_len_410, contRetrace);
 
@@ -16,7 +16,7 @@ INCLUDE_ASM(os/code_3b910_len_410, contReadNW);
 
 INCLUDE_ASM(os/code_3b910_len_410, contQuery);
 
-INCLUDE_ASM(os/code_3b910_len_410, nuContDataLock);
+void INCLUDE_ASM(os/code_3b910_len_410, nuContDataLock, void);
 
-INCLUDE_ASM(os/code_3b910_len_410, nuContDataUnLock);
+void INCLUDE_ASM(os/code_3b910_len_410, nuContDataUnLock, void);
 

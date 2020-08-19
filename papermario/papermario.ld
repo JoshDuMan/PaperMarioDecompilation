@@ -214,37 +214,52 @@ SECTIONS
 
    /* 0x8005F250 03A650-03A690 [40] */
    .text8005F250 0x8005F250 : AT(0x03A650) {
-      build/src/os/code_3a650_len_40.o(.text);
+      build/src/os/nusys/nuGfxFuncSet.o(.text);
    }
 
    /* 0x8005F290 03A690-03A6D0 [40] */
    .text8005F290 0x8005F290 : AT(0x03A690) {
-      build/src/os/code_3a690_len_40.o(.text);
+      build/src/os/nusys/nuGfxPreNMIFuncSet.o(.text);
    }
 
    /* 0x8005F2D0 03A6D0-03A6F0 [20] */
    .text8005F2D0 0x8005F2D0 : AT(0x03A6D0) {
-      build/src/os/code_3a6d0_len_20.o(.text);
+      build/src/os/nusys/nuGfxTaskAllEndWait.o(.text);
    }
 
    /* 0x8005F2F0 03A6F0-03A800 [110] */
    .text8005F2F0 0x8005F2F0 : AT(0x03A6F0) {
-      build/src/os/code_3a6f0_len_110.o(.text);
+      build/src/os/nusys/nuGfxSetCfb.o(.text);
    }
 
    /* 0x8005F400 03A800-03A830 [30] */
    .text8005F400 0x8005F400 : AT(0x03A800) {
-      build/src/os/code_3a800_len_30.o(.text);
+      build/src/os/nusys/nuGfxDisplayOff.o(.text);
    }
 
    /* 0x8005F430 03A830-03A850 [20] */
    .text8005F430 0x8005F430 : AT(0x03A830) {
-      build/src/os/code_3a830_len_20.o(.text);
+      build/src/os/nusys/nuGfxDisplayOn.o(.text);
    }
 
-   /* 0x8005F450 03A850-03B290 [A40] */
+   /* 0x8005F450 03A850-03A890 [40] */
    .text8005F450 0x8005F450 : AT(0x03A850) {
-      build/src/os/code_3a850_le_a40.o(.text);
+      build/src/os/nusys/nuPiInit.o(.text);
+   }
+
+   /* 0x8005F490 03A890-03A960 [D0] */
+   .text8005F490 0x8005F490 : AT(0x03A890) {
+      build/src/os/nusys/nuPiReadRom.o(.text);
+    }
+
+   /* 0x8005F560 03A960-03AA10 [B0] */
+   .text8005F560 0x8005F560 : AT(0x03A960) {
+      build/src/os/nuGfxInit.o(.text);
+   }
+
+   /* 0x8005F610 03AA10-03B290 [880] */
+   .text8005F610 0x8005F610 : AT(0x03AA10) {
+      build/src/os/code_3a960_len_930.o(.text);
    }
 
    /* 0x8005FE90 03B290-03B390 [100] */
@@ -264,7 +279,7 @@ SECTIONS
 
    /* 0x80060310 03B710-03B750 [40] */
    .text80060310 0x80060310 : AT(0x03B710) {
-      build/src/os/code_3b710_len_40.o(.text);
+      build/src/os/nusys/nuGfxSwapCfbFuncSet.o(.text);
    }
 
    /* 0x80060350 03B750-03B770 [20] */
@@ -274,7 +289,7 @@ SECTIONS
 
    /* 0x80060370 03B770-03B7F0 [80] */
    .text80060370 0x80060370 : AT(0x03B770) {
-      build/src/os/code_3b770_len_80.o(.text);
+      build/src/os/nusys/nuGfxRetraceWait.o(.text);
    }
 
    /* 0x800603F0 03B7F0-03B910 [120] */
@@ -684,7 +699,7 @@ SECTIONS
 
    /* 0x8006A630 045A30-045A50 [20] */
    .text8006A630 0x8006A630 : AT(0x045A30) {
-      build/src/os/code_45a30_len_20.o(.text);
+      build/src/os/osAfterPreNMI.o(.text);
    }
 
    /* 0x8006A650 045A50-045DF0 [3A0] */
@@ -729,7 +744,7 @@ SECTIONS
 
    /* 0x8006C670 047A70-047A80 [10] */
    .text8006C670 0x8006C670 : AT(0x047A70) {
-      build/src/os/code_47a70_len_10.o(.text);
+      build/asm/os/__osGetSR.o(.text);
    }
 
    /* 0x8006C680 047A80-047A90 [10] */

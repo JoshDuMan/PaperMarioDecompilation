@@ -2,7 +2,7 @@
 
 INCLUDE_ASM(os/code_7e40_len_3f0, nuGfxTaskMgr);
 
-INCLUDE_ASM(os/code_7e40_len_3f0, nuGfxTaskMgrInit);
+void INCLUDE_ASM(os/code_7e40_len_3f0, nuGfxTaskMgrInit, void);
 
-INCLUDE_ASM(os/code_7e40_len_3f0, nuGfxTaskStart);
+void INCLUDE_ASM(os/code_7e40_len_3f0, nuGfxTaskStart, Gfx *gfxList_ptr, u32 gfxListSize, u32 ucode, u32 flag);
 

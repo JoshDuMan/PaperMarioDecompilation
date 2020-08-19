@@ -8,7 +8,7 @@ glabel osInitialize
 /* 045B0C 8006A70C 24020001 */  addiu $v0, $zero, 1
 /* 045B10 8006A710 AFBF0018 */  sw    $ra, 0x18($sp)
 /* 045B14 8006A714 3C01800A */  lui   $at, 0x800a
-/* 045B18 8006A718 0C01B19C */  jal   osGetSR
+/* 045B18 8006A718 0C01B19C */  jal   __osGetSR
 /* 045B1C 8006A71C AC22A660 */   sw    $v0, -0x59a0($at)
 /* 045B20 8006A720 3C042000 */  lui   $a0, 0x2000
 /* 045B24 8006A724 0C01B1A8 */  jal   osSetSR

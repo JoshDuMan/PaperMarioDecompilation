@@ -1,6 +1,6 @@
 #include "common.h"
 
-INCLUDE_ASM(code_8230_len_1ae0, nuSiMgrInit);
+u8 INCLUDE_ASM(code_8230_len_1ae0, nuSiMgrInit, void);
 
 INCLUDE_ASM(code_8230_len_1ae0, nuSiSendMesg);
 

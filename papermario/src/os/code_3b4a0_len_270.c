@@ -1,12 +1,12 @@
 #include "common.h"
 
-INCLUDE_ASM(os/code_3b4a0_len_270, nuContRmbForceStop);
+void INCLUDE_ASM(os/code_3b4a0_len_270, nuContRmbForceStop, void);
 
-INCLUDE_ASM(os/code_3b4a0_len_270, nuContRmbForceStopEnd);
+void INCLUDE_ASM(os/code_3b4a0_len_270, nuContRmbForceStopEnd, void);
 
 INCLUDE_ASM(os/code_3b4a0_len_270, nuPiReadRomOverlay);
 
-INCLUDE_ASM(os/code_3b4a0_len_270, nuGfxThreadStart);
+void INCLUDE_ASM(os/code_3b4a0_len_270, nuGfxThreadStart, void);
 
 INCLUDE_ASM(os/code_3b4a0_len_270, nuGfxThread);
 

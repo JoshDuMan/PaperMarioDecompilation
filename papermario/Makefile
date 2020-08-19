@@ -2,12 +2,19 @@
 
 SHELL=/bin/bash -o pipefail
 
+# If NON_MATCHING is 1, define the NON_MATCHING C flag when building
+NON_MATCHING ?= 0
+
+ifeq ($(NON_MATCHING),1)
+  CFLAGS := -DNON_MATCHING
+endif
+
 ################ Target Executable and Sources ###############
 
 # BUILD_DIR is location where all build artifacts are placed
 BUILD_DIR = build
 
-SRC_DIRS := src src/os
+SRC_DIRS := src src/os src/os/nusys
 ASM_DIRS := asm asm/os
 DATA_DIRS := bin
 COMPRESSED_DIRS := yay0
